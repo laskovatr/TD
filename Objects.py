@@ -141,7 +141,6 @@ class MobGumba(pygame.sprite.Sprite):  # класс мобов, которые �
     def sound(self):  # то же самое, что и в классе выше
         self.snd = False
 
-
 class MobBonus(pygame.sprite.Sprite):  # класс бонуса - сундучка, который дает 200 очков и 1 жизнь
     def __init__(self, x, y, *groups):
         super().__init__(*groups)
