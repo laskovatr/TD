@@ -11,6 +11,10 @@ def load_image(name, colorkey=None):
 
 
 class Mario(pygame.sprite.Sprite):  # класс главного игрока - Марио
+    '''
+    класс главного игрока - Марио
+    '''
+    
     image_run1_r = load_image("mario_run1_r.png")
     image_run2_r = load_image("mario_run2_r.png")
     image_run1_l = load_image("mario_run1_l.png")
@@ -119,6 +123,10 @@ class Mario(pygame.sprite.Sprite):  # класс главного игрока -
             self.rect = self.rect.move(self.x - self.rect.x, self.y - self.rect.y)
 
     def move_x(self, x):  # ход Марио по x
+        '''
+        ход Марио по x
+        '''
+        
         self.xod += 1
         self.vekt = x
         if x == 1:
@@ -142,6 +150,10 @@ class Mario(pygame.sprite.Sprite):  # класс главного игрока -
                 self.image = Mario.image_run2_l
 
     def set_moving(self):  # изменение состояния перемещения марио
+        '''
+        изменение состояния перемещения марио
+        '''
+        
         if self.moving:
             self.moving = False
             if self.vekt == -1:
@@ -152,6 +164,10 @@ class Mario(pygame.sprite.Sprite):  # класс главного игрока -
             self.moving = True
 
     def start_jump(self):  # инициализация прыжка
+        '''
+         инициализация прыжка
+        '''
+        
         if pygame.sprite.spritecollideany(self, self.gr):
             if self.potential == 0:
                 self.potential = 225
@@ -159,6 +175,10 @@ class Mario(pygame.sprite.Sprite):  # класс главного игрока -
                 self.potential = 120
 
     def get_coords(self):  # возвращение нижнего левого угла Марио
+        '''
+        возвращение нижнего левого угла Марио
+        '''
+        
         return [self.rect.x, self.rect.y + self.rect.w]
 
     def damage_mario(
@@ -205,10 +225,18 @@ class Mario(pygame.sprite.Sprite):  # класс главного игрока -
             self.y = self.rect.y
 
     def update_lifes(self):
+        '''
+        обновляет жизни в Main.py
+        '''
+        
         # обновляет жизни в Main.py
         return self.lifes
 
     def get_dash(self):
+        '''
+        возвращает перемщение по камере
+        '''
+        
         # возвращает перемщение по камере
         if self.moving:
             return self.dash
@@ -216,16 +244,28 @@ class Mario(pygame.sprite.Sprite):  # класс главного игрока -
             return 0
 
     def check_fall(self, mob):
+        '''
+        проверка соприкомновения
+        '''
+        
         # проверка соприкомновения
         if pygame.sprite.collide_mask(self, mob):
             return True
         return False
 
     def return_shot(self):
+        '''
+        возвращает shooting
+        '''
+        
         # возвращает shooting
         return self.shoting
 
     def if_kill(self):
+        '''
+        логика при смерти
+        '''
+        
         # логика при смерти
         self.damage = 0
 
