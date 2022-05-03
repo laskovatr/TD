@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc 0.10.0">
+<title>Start API documentation</title>
+<meta name="description" content="">
+<link rel="preload stylesheet" as="style" href="Start%20API%20documentation_files/sanitize.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin="">
+<link rel="preload stylesheet" as="style" href="Start%20API%20documentation_files/typography.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin="">
+<link rel="stylesheet preload" as="style" href="Start%20API%20documentation_files/github.css" crossorigin="">
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer="defer" src="Start%20API%20documentation_files/highlight.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin=""></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<nav class="http-server-breadcrumbs">
+<a href="http://localhost:8080/">All packages</a>
+</nav>
+<h1 class="title">Module <code>Start</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-keyword">import</span> random
+
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> pygame
+<span class="hljs-keyword">import</span> sys
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_image</span>(<span class="hljs-params">name, colorkey=None</span>):</span>
+    fullname = os.path.join(<span class="hljs-string">'data'</span>, name)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> os.path.isfile(fullname):
+        print(<span class="hljs-string">f"Файл с изображением '<span class="hljs-subst">{fullname}</span>' не найден"</span>)
+        sys.exit()
+    image = pygame.image.load(fullname)
+    <span class="hljs-keyword">return</span> image
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Info</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка "информация" на главном экране(слева)</span>
+    <span class="hljs-string">'''
+     кнопка "информация" на главном экране(слева)
+    '''</span>
+    
+    image1 = load_image(<span class="hljs-string">"info.png"</span>)
+    image2 = load_image(<span class="hljs-string">"info1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Info.image1  <span class="hljs-comment"># картинка</span>
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">480</span>
+        self.rect.y = <span class="hljs-number">222</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-string">'''
+        реакция кнопки на наведение курсора на нее
+        '''</span>
+        
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-string">'''
+        нажатие
+         '''</span>
+        
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-string">'''
+        изменение при нажатии или наведении курсора на кнопку
+        '''</span>
+        
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Info.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Info.image1
+        <span class="hljs-keyword">else</span>:
+            self.image = Info.image2
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Settings</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка, открывающая окно об авторах проекта</span>
+    <span class="hljs-string">'''
+    кнопка, открывающая окно об авторах проекта
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"settings.png"</span>)
+    image1 = load_image(<span class="hljs-string">"settings1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Settings.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">75</span>
+        self.rect.y = <span class="hljs-number">222</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Settings.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Settings.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Settings.image1
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Start</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка "старт", т.е. начало игры</span>
+    <span class="hljs-string">'''
+     кнопка "старт", т.е. начало игры
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"play.png"</span>)
+    image1 = load_image(<span class="hljs-string">"play1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Start.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">280</span>
+        self.rect.y = <span class="hljs-number">222</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Start.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Start.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Start.image1
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Match</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># спрайты, которые пользователь видит, когда выбирает уровень сложности</span>
+    <span class="hljs-string">'''
+     спрайты, которые пользователь видит, когда выбирает уровень сложности
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"match.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+    image1 = load_image(<span class="hljs-string">"matched.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, i, ln, *gr</span>):</span>
+        super().__init__(gr)
+        <span class="hljs-comment"># далее напротив выбранного уровня сменяется с пустого красного квадрата на красный квадрат с крестом</span>
+        <span class="hljs-keyword">if</span> ln == <span class="hljs-number">5000</span> <span class="hljs-keyword">and</span> i == <span class="hljs-number">1</span>:
+            self.image = Match.image1
+        <span class="hljs-keyword">elif</span> ln == <span class="hljs-number">30000</span> <span class="hljs-keyword">and</span> i == <span class="hljs-number">2</span>:
+            self.image = Match.image1
+        <span class="hljs-keyword">elif</span> ln == <span class="hljs-number">50000</span> <span class="hljs-keyword">and</span> i == <span class="hljs-number">3</span>:
+            self.image = Match.image1
+        <span class="hljs-keyword">else</span>:
+            self.image = Match.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">280</span>
+        self.rect.y = <span class="hljs-number">16</span> + i * <span class="hljs-number">130</span>
+        self.i = i
+        self.k = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_name</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># возвращает номер спрайта от 1 до 3(функция используется для расставления всех страйтов)</span>
+        <span class="hljs-string">'''
+        возвращает номер спрайта от 1 до 3(функция используется для расставления всех страйтов)
+        '''</span>
+        
+        <span class="hljs-keyword">return</span> self.i
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_gr</span>(<span class="hljs-params">self, gr</span>):</span>  <span class="hljs-comment"># добавление спрайта в группу</span>
+        <span class="hljs-string">'''
+         добавление спрайта в группу
+        '''</span>
+        
+        gr.add(self)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># вернуться назад</span>
+        self.image = Match.imn
+        self.k = <span class="hljs-number">1</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'done'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_dot</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># смена пустого квадрата на квадрат с крестом</span>
+        self.image = Match.image1
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">del_dot</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># смена квадрата с крестом на пустой квадарат</span>
+        self.image = Match.image
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Reload</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># спрайт "играть заново" при проигрыше</span>
+    <span class="hljs-string">'''
+     спрайт "играть заново" при проигрыше
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"reload.png"</span>)
+    image1 = load_image(<span class="hljs-string">"reload1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Reload.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">40</span>
+        self.rect.y = <span class="hljs-number">400</span>
+        self.vekt = <span class="hljs-number">3</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Reload.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Reload.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Reload.image1
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Exit</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка "выйти" при проигрыше</span>
+    <span class="hljs-string">'''
+    кнопка "выйти" при проигрыше
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"exit.png"</span>)
+    image1 = load_image(<span class="hljs-string">"exit1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Exit.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">520</span>
+        self.rect.y = <span class="hljs-number">400</span>
+        self.vekt = <span class="hljs-number">3</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Exit.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Exit.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Exit.image1
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Heart</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># сердца, или количество жизней, которые есть у Марио</span>
+    <span class="hljs-string">'''
+    сердца, или количество жизней, которые есть у Марио
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"heart.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, x, y, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Heart.image
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quit</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка выхода из игры при победе</span>
+    <span class="hljs-string">'''
+    кнопка выхода из игры при победе
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"onoff.png"</span>)
+    image1 = load_image(<span class="hljs-string">"onoff1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Quit.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">20</span>
+        self.rect.y = <span class="hljs-number">475</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Quit.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Quit.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Quit.image1
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Next</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка "продолжить играть"  после победы</span>
+    <span class="hljs-string">'''
+    кнопка "продолжить играть"  после победы
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"next.png"</span>)
+    image1 = load_image(<span class="hljs-string">"next1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Next.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">560</span>
+        self.rect.y = <span class="hljs-number">475</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Next.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Next.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Next.image1
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Finish</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># дерево и табличка в конце уровней</span>
+    <span class="hljs-string">'''
+     дерево и табличка в конце уровней
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"Tree_fin.png"</span>)
+    image = pygame.transform.scale(image, (<span class="hljs-number">300</span>, <span class="hljs-number">300</span>))
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, x, y, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Finish.image
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="Start.load_image"><code class="name flex">
+<span>def <span class="ident">load_image</span></span>(<span>name, colorkey=None)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_image</span>(<span class="hljs-params">name, colorkey=None</span>):</span>
+    fullname = os.path.join(<span class="hljs-string">'data'</span>, name)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> os.path.isfile(fullname):
+        print(<span class="hljs-string">f"Файл с изображением '<span class="hljs-subst">{fullname}</span>' не найден"</span>)
+        sys.exit()
+    image = pygame.image.load(fullname)
+    <span class="hljs-keyword">return</span> image</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="Start.Exit"><code class="flex name class">
+<span>class <span class="ident">Exit</span></span>
+<span>(</span><span>*gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>кнопка "выйти" при проигрыше</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Exit</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка "выйти" при проигрыше</span>
+    <span class="hljs-string">'''
+    кнопка "выйти" при проигрыше
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"exit.png"</span>)
+    image1 = load_image(<span class="hljs-string">"exit1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Exit.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">520</span>
+        self.rect.y = <span class="hljs-number">400</span>
+        self.vekt = <span class="hljs-number">3</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Exit.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Exit.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Exit.image1</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Exit.image"><code class="name">var <span class="ident">image</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Exit.image1"><code class="name">var <span class="ident">image1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Exit.imn"><code class="name">var <span class="ident">imn</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Start.Exit.click"><code class="name flex">
+<span>def <span class="ident">click</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Exit.is_on"><code class="name flex">
+<span>def <span class="ident">is_on</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        self.vekt = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        self.vekt = <span class="hljs-number">0</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Exit.update"><code class="name flex">
+<span>def <span class="ident">update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>method to control sprite behavior</p>
+<p>Sprite.update(<em>args, </em>*kwargs):</p>
+<p>The default implementation of this method does nothing; it's just a
+convenient "hook" that you can override. This method is called by
+Group.update() with whatever arguments you give it.</p>
+<p>There is no need to use this method if not using the convenience
+method by the same name in the Group class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+        self.image = Exit.imn
+    <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+        self.image = Exit.image
+    <span class="hljs-keyword">else</span>:
+        self.image = Exit.image1</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Start.Finish"><code class="flex name class">
+<span>class <span class="ident">Finish</span></span>
+<span>(</span><span>x, y, *gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>дерево и табличка в конце уровней</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Finish</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># дерево и табличка в конце уровней</span>
+    <span class="hljs-string">'''
+     дерево и табличка в конце уровней
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"Tree_fin.png"</span>)
+    image = pygame.transform.scale(image, (<span class="hljs-number">300</span>, <span class="hljs-number">300</span>))
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, x, y, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Finish.image
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Finish.image"><code class="name">var <span class="ident">image</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Start.Heart"><code class="flex name class">
+<span>class <span class="ident">Heart</span></span>
+<span>(</span><span>x, y, *gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>сердца, или количество жизней, которые есть у Марио</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Heart</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># сердца, или количество жизней, которые есть у Марио</span>
+    <span class="hljs-string">'''
+    сердца, или количество жизней, которые есть у Марио
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"heart.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, x, y, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Heart.image
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Heart.image"><code class="name">var <span class="ident">image</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Start.Info"><code class="flex name class">
+<span>class <span class="ident">Info</span></span>
+<span>(</span><span>*gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>кнопка "информация" на главном экране(слева)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Info</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка "информация" на главном экране(слева)</span>
+    <span class="hljs-string">'''
+     кнопка "информация" на главном экране(слева)
+    '''</span>
+    
+    image1 = load_image(<span class="hljs-string">"info.png"</span>)
+    image2 = load_image(<span class="hljs-string">"info1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Info.image1  <span class="hljs-comment"># картинка</span>
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">480</span>
+        self.rect.y = <span class="hljs-number">222</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-string">'''
+        реакция кнопки на наведение курсора на нее
+        '''</span>
+        
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-string">'''
+        нажатие
+         '''</span>
+        
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-string">'''
+        изменение при нажатии или наведении курсора на кнопку
+        '''</span>
+        
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Info.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Info.image1
+        <span class="hljs-keyword">else</span>:
+            self.image = Info.image2</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Info.image1"><code class="name">var <span class="ident">image1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Info.image2"><code class="name">var <span class="ident">image2</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Info.imn"><code class="name">var <span class="ident">imn</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Start.Info.click"><code class="name flex">
+<span>def <span class="ident">click</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>нажатие</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+    <span class="hljs-string">'''
+    нажатие
+     '''</span>
+    
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Info.is_on"><code class="name flex">
+<span>def <span class="ident">is_on</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>реакция кнопки на наведение курсора на нее</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+    <span class="hljs-string">'''
+    реакция кнопки на наведение курсора на нее
+    '''</span>
+    
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        self.vekt = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        self.vekt = <span class="hljs-number">0</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Info.update"><code class="name flex">
+<span>def <span class="ident">update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>изменение при нажатии или наведении курсора на кнопку</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+    <span class="hljs-string">'''
+    изменение при нажатии или наведении курсора на кнопку
+    '''</span>
+    
+    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+        self.image = Info.imn
+    <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+        self.image = Info.image1
+    <span class="hljs-keyword">else</span>:
+        self.image = Info.image2</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Start.Match"><code class="flex name class">
+<span>class <span class="ident">Match</span></span>
+<span>(</span><span>i, ln, *gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>спрайты, которые пользователь видит, когда выбирает уровень сложности</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Match</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># спрайты, которые пользователь видит, когда выбирает уровень сложности</span>
+    <span class="hljs-string">'''
+     спрайты, которые пользователь видит, когда выбирает уровень сложности
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"match.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+    image1 = load_image(<span class="hljs-string">"matched.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, i, ln, *gr</span>):</span>
+        super().__init__(gr)
+        <span class="hljs-comment"># далее напротив выбранного уровня сменяется с пустого красного квадрата на красный квадрат с крестом</span>
+        <span class="hljs-keyword">if</span> ln == <span class="hljs-number">5000</span> <span class="hljs-keyword">and</span> i == <span class="hljs-number">1</span>:
+            self.image = Match.image1
+        <span class="hljs-keyword">elif</span> ln == <span class="hljs-number">30000</span> <span class="hljs-keyword">and</span> i == <span class="hljs-number">2</span>:
+            self.image = Match.image1
+        <span class="hljs-keyword">elif</span> ln == <span class="hljs-number">50000</span> <span class="hljs-keyword">and</span> i == <span class="hljs-number">3</span>:
+            self.image = Match.image1
+        <span class="hljs-keyword">else</span>:
+            self.image = Match.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">280</span>
+        self.rect.y = <span class="hljs-number">16</span> + i * <span class="hljs-number">130</span>
+        self.i = i
+        self.k = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_name</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># возвращает номер спрайта от 1 до 3(функция используется для расставления всех страйтов)</span>
+        <span class="hljs-string">'''
+        возвращает номер спрайта от 1 до 3(функция используется для расставления всех страйтов)
+        '''</span>
+        
+        <span class="hljs-keyword">return</span> self.i
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_gr</span>(<span class="hljs-params">self, gr</span>):</span>  <span class="hljs-comment"># добавление спрайта в группу</span>
+        <span class="hljs-string">'''
+         добавление спрайта в группу
+        '''</span>
+        
+        gr.add(self)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># вернуться назад</span>
+        self.image = Match.imn
+        self.k = <span class="hljs-number">1</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'done'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_dot</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># смена пустого квадрата на квадрат с крестом</span>
+        self.image = Match.image1
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">del_dot</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># смена квадрата с крестом на пустой квадарат</span>
+        self.image = Match.image</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Match.image"><code class="name">var <span class="ident">image</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Match.image1"><code class="name">var <span class="ident">image1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Match.imn"><code class="name">var <span class="ident">imn</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Start.Match.clear"><code class="name flex">
+<span>def <span class="ident">clear</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># вернуться назад</span>
+    self.image = Match.imn
+    self.k = <span class="hljs-number">1</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Match.click"><code class="name flex">
+<span>def <span class="ident">click</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'done'</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Match.del_dot"><code class="name flex">
+<span>def <span class="ident">del_dot</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">del_dot</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># смена квадрата с крестом на пустой квадарат</span>
+    self.image = Match.image</code></pre>
+</details>
+</dd>
+<dt id="Start.Match.get_name"><code class="name flex">
+<span>def <span class="ident">get_name</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>возвращает номер спрайта от 1 до 3(функция используется для расставления всех страйтов)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_name</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># возвращает номер спрайта от 1 до 3(функция используется для расставления всех страйтов)</span>
+    <span class="hljs-string">'''
+    возвращает номер спрайта от 1 до 3(функция используется для расставления всех страйтов)
+    '''</span>
+    
+    <span class="hljs-keyword">return</span> self.i</code></pre>
+</details>
+</dd>
+<dt id="Start.Match.set_dot"><code class="name flex">
+<span>def <span class="ident">set_dot</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_dot</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># смена пустого квадрата на квадрат с крестом</span>
+    self.image = Match.image1</code></pre>
+</details>
+</dd>
+<dt id="Start.Match.set_gr"><code class="name flex">
+<span>def <span class="ident">set_gr</span></span>(<span>self, gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>добавление спрайта в группу</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_gr</span>(<span class="hljs-params">self, gr</span>):</span>  <span class="hljs-comment"># добавление спрайта в группу</span>
+    <span class="hljs-string">'''
+     добавление спрайта в группу
+    '''</span>
+    
+    gr.add(self)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Start.Next"><code class="flex name class">
+<span>class <span class="ident">Next</span></span>
+<span>(</span><span>*gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>кнопка "продолжить играть"
+после победы</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Next</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка "продолжить играть"  после победы</span>
+    <span class="hljs-string">'''
+    кнопка "продолжить играть"  после победы
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"next.png"</span>)
+    image1 = load_image(<span class="hljs-string">"next1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Next.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">560</span>
+        self.rect.y = <span class="hljs-number">475</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Next.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Next.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Next.image1</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Next.image"><code class="name">var <span class="ident">image</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Next.image1"><code class="name">var <span class="ident">image1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Next.imn"><code class="name">var <span class="ident">imn</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Start.Next.click"><code class="name flex">
+<span>def <span class="ident">click</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Next.is_on"><code class="name flex">
+<span>def <span class="ident">is_on</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        self.vekt = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        self.vekt = <span class="hljs-number">0</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Next.update"><code class="name flex">
+<span>def <span class="ident">update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>method to control sprite behavior</p>
+<p>Sprite.update(<em>args, </em>*kwargs):</p>
+<p>The default implementation of this method does nothing; it's just a
+convenient "hook" that you can override. This method is called by
+Group.update() with whatever arguments you give it.</p>
+<p>There is no need to use this method if not using the convenience
+method by the same name in the Group class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+        self.image = Next.imn
+    <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+        self.image = Next.image
+    <span class="hljs-keyword">else</span>:
+        self.image = Next.image1</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Start.Quit"><code class="flex name class">
+<span>class <span class="ident">Quit</span></span>
+<span>(</span><span>*gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>кнопка выхода из игры при победе</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quit</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка выхода из игры при победе</span>
+    <span class="hljs-string">'''
+    кнопка выхода из игры при победе
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"onoff.png"</span>)
+    image1 = load_image(<span class="hljs-string">"onoff1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Quit.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">20</span>
+        self.rect.y = <span class="hljs-number">475</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Quit.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Quit.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Quit.image1</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Quit.image"><code class="name">var <span class="ident">image</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Quit.image1"><code class="name">var <span class="ident">image1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Quit.imn"><code class="name">var <span class="ident">imn</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Start.Quit.click"><code class="name flex">
+<span>def <span class="ident">click</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Quit.is_on"><code class="name flex">
+<span>def <span class="ident">is_on</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        self.vekt = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        self.vekt = <span class="hljs-number">0</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Quit.update"><code class="name flex">
+<span>def <span class="ident">update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>method to control sprite behavior</p>
+<p>Sprite.update(<em>args, </em>*kwargs):</p>
+<p>The default implementation of this method does nothing; it's just a
+convenient "hook" that you can override. This method is called by
+Group.update() with whatever arguments you give it.</p>
+<p>There is no need to use this method if not using the convenience
+method by the same name in the Group class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+        self.image = Quit.imn
+    <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+        self.image = Quit.image
+    <span class="hljs-keyword">else</span>:
+        self.image = Quit.image1</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Start.Reload"><code class="flex name class">
+<span>class <span class="ident">Reload</span></span>
+<span>(</span><span>*gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>спрайт "играть заново" при проигрыше</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Reload</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># спрайт "играть заново" при проигрыше</span>
+    <span class="hljs-string">'''
+     спрайт "играть заново" при проигрыше
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"reload.png"</span>)
+    image1 = load_image(<span class="hljs-string">"reload1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Reload.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">40</span>
+        self.rect.y = <span class="hljs-number">400</span>
+        self.vekt = <span class="hljs-number">3</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Reload.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Reload.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Reload.image1</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Reload.image"><code class="name">var <span class="ident">image</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Reload.image1"><code class="name">var <span class="ident">image1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Reload.imn"><code class="name">var <span class="ident">imn</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Start.Reload.click"><code class="name flex">
+<span>def <span class="ident">click</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Reload.is_on"><code class="name flex">
+<span>def <span class="ident">is_on</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        self.vekt = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        self.vekt = <span class="hljs-number">0</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Reload.update"><code class="name flex">
+<span>def <span class="ident">update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>method to control sprite behavior</p>
+<p>Sprite.update(<em>args, </em>*kwargs):</p>
+<p>The default implementation of this method does nothing; it's just a
+convenient "hook" that you can override. This method is called by
+Group.update() with whatever arguments you give it.</p>
+<p>There is no need to use this method if not using the convenience
+method by the same name in the Group class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+        self.image = Reload.imn
+    <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+        self.image = Reload.image
+    <span class="hljs-keyword">else</span>:
+        self.image = Reload.image1</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Start.Settings"><code class="flex name class">
+<span>class <span class="ident">Settings</span></span>
+<span>(</span><span>*gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>кнопка, открывающая окно об авторах проекта</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Settings</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка, открывающая окно об авторах проекта</span>
+    <span class="hljs-string">'''
+    кнопка, открывающая окно об авторах проекта
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"settings.png"</span>)
+    image1 = load_image(<span class="hljs-string">"settings1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Settings.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">75</span>
+        self.rect.y = <span class="hljs-number">222</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Settings.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Settings.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Settings.image1</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Settings.image"><code class="name">var <span class="ident">image</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Settings.image1"><code class="name">var <span class="ident">image1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Settings.imn"><code class="name">var <span class="ident">imn</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Start.Settings.click"><code class="name flex">
+<span>def <span class="ident">click</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Settings.is_on"><code class="name flex">
+<span>def <span class="ident">is_on</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        self.vekt = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        self.vekt = <span class="hljs-number">0</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Settings.update"><code class="name flex">
+<span>def <span class="ident">update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>method to control sprite behavior</p>
+<p>Sprite.update(<em>args, </em>*kwargs):</p>
+<p>The default implementation of this method does nothing; it's just a
+convenient "hook" that you can override. This method is called by
+Group.update() with whatever arguments you give it.</p>
+<p>There is no need to use this method if not using the convenience
+method by the same name in the Group class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+        self.image = Settings.imn
+    <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+        self.image = Settings.image
+    <span class="hljs-keyword">else</span>:
+        self.image = Settings.image1</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Start.Start"><code class="flex name class">
+<span>class <span class="ident">Start</span></span>
+<span>(</span><span>*gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>кнопка "старт", т.е. начало игры</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Start</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># кнопка "старт", т.е. начало игры</span>
+    <span class="hljs-string">'''
+     кнопка "старт", т.е. начало игры
+    '''</span>
+    
+    image = load_image(<span class="hljs-string">"play.png"</span>)
+    image1 = load_image(<span class="hljs-string">"play1.png"</span>)
+    imn = load_image(<span class="hljs-string">"nothing.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, *gr</span>):</span>
+        super().__init__(gr)
+        self.image = Start.image
+        self.rect = self.image.get_rect()
+        self.rect.x = <span class="hljs-number">280</span>
+        self.rect.y = <span class="hljs-number">222</span>
+        self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            self.vekt = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            self.vekt = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+        <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                                 self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+            self.image = Start.imn
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+            self.image = Start.image
+        <span class="hljs-keyword">else</span>:
+            self.image = Start.image1</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Start.Start.image"><code class="name">var <span class="ident">image</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Start.image1"><code class="name">var <span class="ident">image1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Start.Start.imn"><code class="name">var <span class="ident">imn</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Start.Start.click"><code class="name flex">
+<span>def <span class="ident">click</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">click</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># нажатие</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Start.is_on"><code class="name flex">
+<span>def <span class="ident">is_on</span></span>(<span>self, x, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_on</span>(<span class="hljs-params">self, x, y</span>):</span>  <span class="hljs-comment"># реакция кнопки на наведение курсора на нее</span>
+    <span class="hljs-keyword">if</span> x <span class="hljs-keyword">in</span> range(self.rect.x, self.rect.x + self.rect.w + <span class="hljs-number">1</span>) <span class="hljs-keyword">and</span> y <span class="hljs-keyword">in</span> range(self.rect.y,
+                                                                             self.rect.y + self.rect.h + <span class="hljs-number">1</span>):
+        self.vekt = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        self.vekt = <span class="hljs-number">0</span></code></pre>
+</details>
+</dd>
+<dt id="Start.Start.update"><code class="name flex">
+<span>def <span class="ident">update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>method to control sprite behavior</p>
+<p>Sprite.update(<em>args, </em>*kwargs):</p>
+<p>The default implementation of this method does nothing; it's just a
+convenient "hook" that you can override. This method is called by
+Group.update() with whatever arguments you give it.</p>
+<p>There is no need to use this method if not using the convenience
+method by the same name in the Group class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение при нажатии или наведении курсора на кнопку</span>
+    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">3</span>:
+        self.image = Start.imn
+    <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">0</span>:
+        self.image = Start.image
+    <span class="hljs-keyword">else</span>:
+        self.image = Start.image1</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="Start.load_image" href="http://localhost:8080/Start.html#Start.load_image">load_image</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="Start.Exit" href="http://localhost:8080/Start.html#Start.Exit">Exit</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Start.Exit.click" href="http://localhost:8080/Start.html#Start.Exit.click">click</a></code></li>
+<li><code><a title="Start.Exit.image" href="http://localhost:8080/Start.html#Start.Exit.image">image</a></code></li>
+<li><code><a title="Start.Exit.image1" href="http://localhost:8080/Start.html#Start.Exit.image1">image1</a></code></li>
+<li><code><a title="Start.Exit.imn" href="http://localhost:8080/Start.html#Start.Exit.imn">imn</a></code></li>
+<li><code><a title="Start.Exit.is_on" href="http://localhost:8080/Start.html#Start.Exit.is_on">is_on</a></code></li>
+<li><code><a title="Start.Exit.update" href="http://localhost:8080/Start.html#Start.Exit.update">update</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Start.Finish" href="http://localhost:8080/Start.html#Start.Finish">Finish</a></code></h4>
+<ul class="">
+<li><code><a title="Start.Finish.image" href="http://localhost:8080/Start.html#Start.Finish.image">image</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Start.Heart" href="http://localhost:8080/Start.html#Start.Heart">Heart</a></code></h4>
+<ul class="">
+<li><code><a title="Start.Heart.image" href="http://localhost:8080/Start.html#Start.Heart.image">image</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Start.Info" href="http://localhost:8080/Start.html#Start.Info">Info</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Start.Info.click" href="http://localhost:8080/Start.html#Start.Info.click">click</a></code></li>
+<li><code><a title="Start.Info.image1" href="http://localhost:8080/Start.html#Start.Info.image1">image1</a></code></li>
+<li><code><a title="Start.Info.image2" href="http://localhost:8080/Start.html#Start.Info.image2">image2</a></code></li>
+<li><code><a title="Start.Info.imn" href="http://localhost:8080/Start.html#Start.Info.imn">imn</a></code></li>
+<li><code><a title="Start.Info.is_on" href="http://localhost:8080/Start.html#Start.Info.is_on">is_on</a></code></li>
+<li><code><a title="Start.Info.update" href="http://localhost:8080/Start.html#Start.Info.update">update</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Start.Match" href="http://localhost:8080/Start.html#Start.Match">Match</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Start.Match.clear" href="http://localhost:8080/Start.html#Start.Match.clear">clear</a></code></li>
+<li><code><a title="Start.Match.click" href="http://localhost:8080/Start.html#Start.Match.click">click</a></code></li>
+<li><code><a title="Start.Match.del_dot" href="http://localhost:8080/Start.html#Start.Match.del_dot">del_dot</a></code></li>
+<li><code><a title="Start.Match.get_name" href="http://localhost:8080/Start.html#Start.Match.get_name">get_name</a></code></li>
+<li><code><a title="Start.Match.image" href="http://localhost:8080/Start.html#Start.Match.image">image</a></code></li>
+<li><code><a title="Start.Match.image1" href="http://localhost:8080/Start.html#Start.Match.image1">image1</a></code></li>
+<li><code><a title="Start.Match.imn" href="http://localhost:8080/Start.html#Start.Match.imn">imn</a></code></li>
+<li><code><a title="Start.Match.set_dot" href="http://localhost:8080/Start.html#Start.Match.set_dot">set_dot</a></code></li>
+<li><code><a title="Start.Match.set_gr" href="http://localhost:8080/Start.html#Start.Match.set_gr">set_gr</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Start.Next" href="http://localhost:8080/Start.html#Start.Next">Next</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Start.Next.click" href="http://localhost:8080/Start.html#Start.Next.click">click</a></code></li>
+<li><code><a title="Start.Next.image" href="http://localhost:8080/Start.html#Start.Next.image">image</a></code></li>
+<li><code><a title="Start.Next.image1" href="http://localhost:8080/Start.html#Start.Next.image1">image1</a></code></li>
+<li><code><a title="Start.Next.imn" href="http://localhost:8080/Start.html#Start.Next.imn">imn</a></code></li>
+<li><code><a title="Start.Next.is_on" href="http://localhost:8080/Start.html#Start.Next.is_on">is_on</a></code></li>
+<li><code><a title="Start.Next.update" href="http://localhost:8080/Start.html#Start.Next.update">update</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Start.Quit" href="http://localhost:8080/Start.html#Start.Quit">Quit</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Start.Quit.click" href="http://localhost:8080/Start.html#Start.Quit.click">click</a></code></li>
+<li><code><a title="Start.Quit.image" href="http://localhost:8080/Start.html#Start.Quit.image">image</a></code></li>
+<li><code><a title="Start.Quit.image1" href="http://localhost:8080/Start.html#Start.Quit.image1">image1</a></code></li>
+<li><code><a title="Start.Quit.imn" href="http://localhost:8080/Start.html#Start.Quit.imn">imn</a></code></li>
+<li><code><a title="Start.Quit.is_on" href="http://localhost:8080/Start.html#Start.Quit.is_on">is_on</a></code></li>
+<li><code><a title="Start.Quit.update" href="http://localhost:8080/Start.html#Start.Quit.update">update</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Start.Reload" href="http://localhost:8080/Start.html#Start.Reload">Reload</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Start.Reload.click" href="http://localhost:8080/Start.html#Start.Reload.click">click</a></code></li>
+<li><code><a title="Start.Reload.image" href="http://localhost:8080/Start.html#Start.Reload.image">image</a></code></li>
+<li><code><a title="Start.Reload.image1" href="http://localhost:8080/Start.html#Start.Reload.image1">image1</a></code></li>
+<li><code><a title="Start.Reload.imn" href="http://localhost:8080/Start.html#Start.Reload.imn">imn</a></code></li>
+<li><code><a title="Start.Reload.is_on" href="http://localhost:8080/Start.html#Start.Reload.is_on">is_on</a></code></li>
+<li><code><a title="Start.Reload.update" href="http://localhost:8080/Start.html#Start.Reload.update">update</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Start.Settings" href="http://localhost:8080/Start.html#Start.Settings">Settings</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Start.Settings.click" href="http://localhost:8080/Start.html#Start.Settings.click">click</a></code></li>
+<li><code><a title="Start.Settings.image" href="http://localhost:8080/Start.html#Start.Settings.image">image</a></code></li>
+<li><code><a title="Start.Settings.image1" href="http://localhost:8080/Start.html#Start.Settings.image1">image1</a></code></li>
+<li><code><a title="Start.Settings.imn" href="http://localhost:8080/Start.html#Start.Settings.imn">imn</a></code></li>
+<li><code><a title="Start.Settings.is_on" href="http://localhost:8080/Start.html#Start.Settings.is_on">is_on</a></code></li>
+<li><code><a title="Start.Settings.update" href="http://localhost:8080/Start.html#Start.Settings.update">update</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Start.Start" href="http://localhost:8080/Start.html#Start.Start">Start</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Start.Start.click" href="http://localhost:8080/Start.html#Start.Start.click">click</a></code></li>
+<li><code><a title="Start.Start.image" href="http://localhost:8080/Start.html#Start.Start.image">image</a></code></li>
+<li><code><a title="Start.Start.image1" href="http://localhost:8080/Start.html#Start.Start.image1">image1</a></code></li>
+<li><code><a title="Start.Start.imn" href="http://localhost:8080/Start.html#Start.Start.imn">imn</a></code></li>
+<li><code><a title="Start.Start.is_on" href="http://localhost:8080/Start.html#Start.Start.is_on">is_on</a></code></li>
+<li><code><a title="Start.Start.update" href="http://localhost:8080/Start.html#Start.Start.update">update</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+<script>
+setInterval(() =>
+fetch(window.location.href, {
+method: "HEAD",
+cache: "no-store",
+headers: {"If-None-Match": "1651489744.0"},
+}).then(response => response.ok && window.location.reload()), 700);
+</script>
+
+</body></html>
