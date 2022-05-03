@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc 0.10.0">
+<title>Mark API documentation</title>
+<meta name="description" content="">
+<link rel="preload stylesheet" as="style" href="Mark%20API%20documentation_files/sanitize.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin="">
+<link rel="preload stylesheet" as="style" href="Mark%20API%20documentation_files/typography.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin="">
+<link rel="stylesheet preload" as="style" href="Mark%20API%20documentation_files/github.css" crossorigin="">
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer="defer" src="Mark%20API%20documentation_files/highlight.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin=""></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<nav class="http-server-breadcrumbs">
+<a href="http://localhost:8080/">All packages</a>
+</nav>
+<h1 class="title">Module <code>Mark</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-keyword">import</span> pygame, os, sys
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_image</span>(<span class="hljs-params">name, colorkey=None</span>):</span>
+    fullname = os.path.join(<span class="hljs-string">'data'</span>, name)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> os.path.isfile(fullname):
+        print(<span class="hljs-string">f"Файл с изображением '<span class="hljs-subst">{fullname}</span>' не найден"</span>)
+        sys.exit()
+    image = pygame.image.load(fullname)
+    <span class="hljs-keyword">return</span> image
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Mario</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># класс главного игрока - Марио</span>
+    <span class="hljs-string">'''
+    класс главного игрока - Марио
+    '''</span>
+    
+    image_run1_r = load_image(<span class="hljs-string">"mario_run1_r.png"</span>)
+    image_run2_r = load_image(<span class="hljs-string">"mario_run2_r.png"</span>)
+    image_run1_l = load_image(<span class="hljs-string">"mario_run1_l.png"</span>)
+    image_run2_l = load_image(<span class="hljs-string">"mario_run2_l.png"</span>)
+    image_jump_r = load_image(<span class="hljs-string">"mario_jump_r.png"</span>)
+    image_jump_l = load_image(<span class="hljs-string">"mario_jump_l.png"</span>)
+    image_stay_r = load_image(<span class="hljs-string">"mario_stay_r.png"</span>)
+    image_stay_l = load_image(<span class="hljs-string">"mario_stay_l.png"</span>)
+    image_start = load_image(<span class="hljs-string">"mario_start.png"</span>)
+    image_damgel = load_image(<span class="hljs-string">"damgel.png"</span>)
+    image_damgel1 = load_image(<span class="hljs-string">"damge1l.png"</span>)
+    image_dethl = load_image(<span class="hljs-string">"image_dethl.png"</span>)
+    image_damger = load_image(<span class="hljs-string">"damger.png"</span>)
+    image_damger1 = load_image(<span class="hljs-string">"damge1r.png"</span>)
+    image_dethr = load_image(<span class="hljs-string">"image_dethr.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, x, y, *gr</span>):</span>
+
+        super().__init__(gr)
+        self.image = Mario.image_start
+        self.mask = pygame.mask.from_surface(self.image)  <span class="hljs-comment"># маска спрайта</span>
+        self.rect = self.image.get_rect()
+        self.rect.x = x  <span class="hljs-comment"># x картинки</span>
+        self.rect.y = y  <span class="hljs-comment"># y картинки</span>
+        self.x = x  <span class="hljs-comment"># x mario</span>
+        self.y = y  <span class="hljs-comment"># y mario</span>
+        self.jumping = <span class="hljs-literal">False</span>  <span class="hljs-comment"># переменная для того, чтобы узнать, Прыгает ли Марио</span>
+        self.moving = <span class="hljs-literal">False</span>  <span class="hljs-comment"># переменная для того, чтобы узнать, двигается ли Марио</span>
+        self.shoting = <span class="hljs-literal">False</span>  <span class="hljs-comment"># переменная для того, чтобы узнать, получает ли урон Марио</span>
+        self.killed = <span class="hljs-literal">False</span>  <span class="hljs-comment"># переменная для того, чтобы узнать, умер ли Марио</span>
+        self.xod = <span class="hljs-number">0</span>  <span class="hljs-comment"># переменная, отвечающая за анимацию марио при ходьбе</span>
+        self.xod_shot = <span class="hljs-number">0</span>  <span class="hljs-comment"># переменная, отвечающая за анимацию марио при получении урона</span>
+        self.vekt = <span class="hljs-number">0</span>  <span class="hljs-comment"># определяет направление, куда бежит марио</span>
+        self.gr = []  <span class="hljs-comment"># инициализация для группы спрайтов</span>
+        self.zn = <span class="hljs-literal">False</span>  <span class="hljs-comment"># логическая пременная</span>
+        self.last_res = <span class="hljs-literal">True</span>  <span class="hljs-comment"># последний результат bool</span>
+        self.potential = <span class="hljs-number">0</span>  <span class="hljs-comment"># потенциал прыжка в пикселеях</span>
+        self.potential_life = <span class="hljs-number">0</span>  <span class="hljs-comment"># потенциал жизней</span>
+        self.lifes = <span class="hljs-number">0</span>  <span class="hljs-comment"># жизни марио</span>
+        self.dash = <span class="hljs-number">0</span>  <span class="hljs-comment"># сдвиг по камере, если X &lt; 0</span>
+        self.mn = [<span class="hljs-number">400</span>, <span class="hljs-number">580</span>]  <span class="hljs-comment"># возможные высоты платформ</span>
+        self.damage = [<span class="hljs-number">-15</span>, <span class="hljs-number">-20</span>, <span class="hljs-number">-20</span>, <span class="hljs-number">-20</span>, <span class="hljs-number">-20</span>, <span class="hljs-number">-15</span>, <span class="hljs-number">-15</span>, <span class="hljs-number">-10</span>, <span class="hljs-number">-10</span>, <span class="hljs-number">-10</span>, <span class="hljs-number">15</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">15</span>, <span class="hljs-number">15</span>, <span class="hljs-number">10</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>]
+        <span class="hljs-comment"># траектория Марио при потери жизни по y</span>
+        self.damage_x = [<span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>]  <span class="hljs-comment"># траектория Марио</span>
+        <span class="hljs-comment"># при потери жизни по x</span>
+        self.last_sprite = <span class="hljs-number">0</span>
+        <span class="hljs-comment"># инциализация под последнего спрайта</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_walls</span>(<span class="hljs-params">self, gr</span>):</span>
+        <span class="hljs-comment"># задается группа платформ для марио</span>
+        self.gr = gr
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_group</span>(<span class="hljs-params">self, gr</span>):</span>
+        <span class="hljs-comment"># добавляется элемент в группу ( при доп инициализации)</span>
+        gr.add(self)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_lifes</span>(<span class="hljs-params">self, live</span>):</span>
+        <span class="hljs-comment"># инциализация жизней</span>
+        self.lifes = live
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># обновление спрайта в зависимости от совершенных действий</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.shoting <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> self.killed:
+            <span class="hljs-comment"># отрисовка по x</span>
+            <span class="hljs-keyword">if</span> self.moving:
+                self.move_x(self.vekt)
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.jumping:
+                    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                        self.image = Mario.image_stay_l
+                    <span class="hljs-keyword">else</span>:
+                        self.image = Mario.image_stay_r
+            <span class="hljs-comment"># отрисовка прыжка ниже</span>
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> pygame.sprite.spritecollideany(self, self.gr) <span class="hljs-keyword">and</span> self.potential == <span class="hljs-number">0</span>:
+                self.jumping = <span class="hljs-literal">True</span>
+                self.y += <span class="hljs-number">15</span>
+                self.last_res = <span class="hljs-literal">True</span>
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                    self.image = Mario.image_jump_l
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_jump_r
+            <span class="hljs-keyword">elif</span> self.potential != <span class="hljs-number">0</span>:
+                <span class="hljs-keyword">if</span> self.y &gt;= <span class="hljs-number">0</span>:
+                    self.y -= <span class="hljs-number">15</span>
+                    self.jumping = <span class="hljs-literal">True</span>
+                    self.potential -= <span class="hljs-number">15</span>
+                <span class="hljs-keyword">else</span>:
+                    self.potential = <span class="hljs-number">0</span>
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                    self.image = Mario.image_jump_l
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_jump_r
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-keyword">if</span> self.y + <span class="hljs-number">56</span> &lt;= self.mn[<span class="hljs-number">0</span>] <span class="hljs-keyword">or</span> (self.y &gt;= self.mn[<span class="hljs-number">0</span>] + <span class="hljs-number">20</span> <span class="hljs-keyword">and</span> self.y + <span class="hljs-number">56</span> &lt;= self.mn[<span class="hljs-number">1</span>]):
+                    self.jumping = <span class="hljs-literal">False</span>
+                    <span class="hljs-keyword">if</span> self.last_res:
+                        self.y -= <span class="hljs-number">5</span>
+                        self.last_res = <span class="hljs-literal">False</span>
+                <span class="hljs-keyword">else</span>:
+                    self.jumping = <span class="hljs-literal">True</span>
+                    self.y += <span class="hljs-number">15</span>
+                    self.last_res = <span class="hljs-literal">True</span>
+                    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                        self.image = Mario.image_jump_l
+                    <span class="hljs-keyword">else</span>:
+                        self.image = Mario.image_jump_r
+            self.rect = self.rect.move(self.x - self.rect.x, self.y - self.rect.y)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move_x</span>(<span class="hljs-params">self, x</span>):</span>  <span class="hljs-comment"># ход Марио по x</span>
+        <span class="hljs-string">'''
+        ход Марио по x
+        '''</span>
+        
+        self.xod += <span class="hljs-number">1</span>
+        self.vekt = x
+        <span class="hljs-keyword">if</span> x == <span class="hljs-number">1</span>:
+            <span class="hljs-keyword">if</span> self.vekt != <span class="hljs-number">0</span>:
+                <span class="hljs-keyword">if</span> self.x &lt;= <span class="hljs-number">350</span>:
+                    self.x += <span class="hljs-number">8</span>
+                    self.dash = <span class="hljs-number">8</span>
+                <span class="hljs-keyword">else</span>:
+                    self.x += <span class="hljs-number">0</span>
+            <span class="hljs-keyword">if</span> self.xod % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+                self.image = Mario.image_run1_r
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_run2_r
+        <span class="hljs-keyword">elif</span> x == <span class="hljs-number">-1</span>:
+            <span class="hljs-keyword">if</span> self.x - <span class="hljs-number">8</span> &gt;= <span class="hljs-number">0</span>:
+                self.x -= <span class="hljs-number">8</span>
+                self.dash = <span class="hljs-number">-8</span>
+            <span class="hljs-keyword">if</span> self.xod % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+                self.image = Mario.image_run1_l
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_run2_l
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_moving</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение состояния перемещения марио</span>
+        <span class="hljs-string">'''
+        изменение состояния перемещения марио
+        '''</span>
+        
+        <span class="hljs-keyword">if</span> self.moving:
+            self.moving = <span class="hljs-literal">False</span>
+            <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                self.image = Mario.image_stay_l
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_stay_r
+        <span class="hljs-keyword">else</span>:
+            self.moving = <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start_jump</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># инициализация прыжка</span>
+        <span class="hljs-string">'''
+         инициализация прыжка
+        '''</span>
+        
+        <span class="hljs-keyword">if</span> pygame.sprite.spritecollideany(self, self.gr):
+            <span class="hljs-keyword">if</span> self.potential == <span class="hljs-number">0</span>:
+                self.potential = <span class="hljs-number">225</span>
+            <span class="hljs-keyword">else</span>:
+                self.potential = <span class="hljs-number">120</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_coords</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># возвращение нижнего левого угла Марио</span>
+        <span class="hljs-string">'''
+        возвращение нижнего левого угла Марио
+        '''</span>
+        
+        <span class="hljs-keyword">return</span> [self.rect.x, self.rect.y + self.rect.w]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">damage_mario</span>(<span class="hljs-params">
+            self</span>):</span>  <span class="hljs-comment"># функция нужна для того, чтобы обработать соприкосновение Марио и моба не по верху; отрисовка анимации</span>
+
+        self.xod_shot += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">if</span> self.xod_shot &gt;= <span class="hljs-number">20</span> <span class="hljs-keyword">and</span> self.lifes != <span class="hljs-number">0</span>:
+            self.shoting = <span class="hljs-literal">False</span>
+            self.xod_shot = <span class="hljs-number">0</span>
+            <span class="hljs-keyword">if</span> self.y &gt;= <span class="hljs-number">500</span>:
+                self.y = <span class="hljs-number">500</span>
+            self.lifes -= <span class="hljs-number">1</span>
+            <span class="hljs-keyword">if</span> self.lifes &lt;= <span class="hljs-number">0</span>:
+                self.killed = <span class="hljs-literal">True</span>
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                    self.image = Mario.image_dethr
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_dethl
+        <span class="hljs-keyword">else</span>:
+            self.shoting = <span class="hljs-literal">True</span>
+            <span class="hljs-keyword">if</span> self.lifes &lt;= <span class="hljs-number">0</span>:
+                self.killed = <span class="hljs-literal">True</span>
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                    self.image = Mario.image_dethr
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_dethl
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-keyword">if</span> self.xod_shot % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+                    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                        self.image = Mario.image_damger
+                    <span class="hljs-keyword">else</span>:
+                        self.image = Mario.image_damgel
+                <span class="hljs-keyword">else</span>:
+                    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                        self.image = Mario.image_damger1
+                    <span class="hljs-keyword">else</span>:
+                        self.image = Mario.image_damgel1
+            self.rect.y -= -self.damage[self.xod_shot]
+            <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                self.rect.x -= self.damage_x[self.xod_shot]
+            <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">1</span>:
+                self.rect.x -= -self.damage_x[self.xod_shot]
+            self.x = self.rect.x
+            self.y = self.rect.y
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_lifes</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-string">'''
+        обновляет жизни в Main.py
+        '''</span>
+        
+        <span class="hljs-comment"># обновляет жизни в Main.py</span>
+        <span class="hljs-keyword">return</span> self.lifes
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_dash</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-string">'''
+        возвращает перемщение по камере
+        '''</span>
+        
+        <span class="hljs-comment"># возвращает перемщение по камере</span>
+        <span class="hljs-keyword">if</span> self.moving:
+            <span class="hljs-keyword">return</span> self.dash
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check_fall</span>(<span class="hljs-params">self, mob</span>):</span>
+        <span class="hljs-string">'''
+        проверка соприкомновения
+        '''</span>
+        
+        <span class="hljs-comment"># проверка соприкомновения</span>
+        <span class="hljs-keyword">if</span> pygame.sprite.collide_mask(self, mob):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">return_shot</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-string">'''
+        возвращает shooting
+        '''</span>
+        
+        <span class="hljs-comment"># возвращает shooting</span>
+        <span class="hljs-keyword">return</span> self.shoting
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">if_kill</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-string">'''
+        логика при смерти
+        '''</span>
+        
+        <span class="hljs-comment"># логика при смерти</span>
+        self.damage = <span class="hljs-number">0</span>
+
+
+<span class="hljs-string">"""
+Класс главного персонажа - марио
+"""</span></code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="Mark.load_image"><code class="name flex">
+<span>def <span class="ident">load_image</span></span>(<span>name, colorkey=None)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_image</span>(<span class="hljs-params">name, colorkey=None</span>):</span>
+    fullname = os.path.join(<span class="hljs-string">'data'</span>, name)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> os.path.isfile(fullname):
+        print(<span class="hljs-string">f"Файл с изображением '<span class="hljs-subst">{fullname}</span>' не найден"</span>)
+        sys.exit()
+    image = pygame.image.load(fullname)
+    <span class="hljs-keyword">return</span> image</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="Mark.Mario"><code class="flex name class">
+<span>class <span class="ident">Mario</span></span>
+<span>(</span><span>x, y, *gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>класс главного игрока - Марио</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Mario</span>(<span class="hljs-params">pygame.sprite.Sprite</span>):</span>  <span class="hljs-comment"># класс главного игрока - Марио</span>
+    <span class="hljs-string">'''
+    класс главного игрока - Марио
+    '''</span>
+    
+    image_run1_r = load_image(<span class="hljs-string">"mario_run1_r.png"</span>)
+    image_run2_r = load_image(<span class="hljs-string">"mario_run2_r.png"</span>)
+    image_run1_l = load_image(<span class="hljs-string">"mario_run1_l.png"</span>)
+    image_run2_l = load_image(<span class="hljs-string">"mario_run2_l.png"</span>)
+    image_jump_r = load_image(<span class="hljs-string">"mario_jump_r.png"</span>)
+    image_jump_l = load_image(<span class="hljs-string">"mario_jump_l.png"</span>)
+    image_stay_r = load_image(<span class="hljs-string">"mario_stay_r.png"</span>)
+    image_stay_l = load_image(<span class="hljs-string">"mario_stay_l.png"</span>)
+    image_start = load_image(<span class="hljs-string">"mario_start.png"</span>)
+    image_damgel = load_image(<span class="hljs-string">"damgel.png"</span>)
+    image_damgel1 = load_image(<span class="hljs-string">"damge1l.png"</span>)
+    image_dethl = load_image(<span class="hljs-string">"image_dethl.png"</span>)
+    image_damger = load_image(<span class="hljs-string">"damger.png"</span>)
+    image_damger1 = load_image(<span class="hljs-string">"damge1r.png"</span>)
+    image_dethr = load_image(<span class="hljs-string">"image_dethr.png"</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, x, y, *gr</span>):</span>
+
+        super().__init__(gr)
+        self.image = Mario.image_start
+        self.mask = pygame.mask.from_surface(self.image)  <span class="hljs-comment"># маска спрайта</span>
+        self.rect = self.image.get_rect()
+        self.rect.x = x  <span class="hljs-comment"># x картинки</span>
+        self.rect.y = y  <span class="hljs-comment"># y картинки</span>
+        self.x = x  <span class="hljs-comment"># x mario</span>
+        self.y = y  <span class="hljs-comment"># y mario</span>
+        self.jumping = <span class="hljs-literal">False</span>  <span class="hljs-comment"># переменная для того, чтобы узнать, Прыгает ли Марио</span>
+        self.moving = <span class="hljs-literal">False</span>  <span class="hljs-comment"># переменная для того, чтобы узнать, двигается ли Марио</span>
+        self.shoting = <span class="hljs-literal">False</span>  <span class="hljs-comment"># переменная для того, чтобы узнать, получает ли урон Марио</span>
+        self.killed = <span class="hljs-literal">False</span>  <span class="hljs-comment"># переменная для того, чтобы узнать, умер ли Марио</span>
+        self.xod = <span class="hljs-number">0</span>  <span class="hljs-comment"># переменная, отвечающая за анимацию марио при ходьбе</span>
+        self.xod_shot = <span class="hljs-number">0</span>  <span class="hljs-comment"># переменная, отвечающая за анимацию марио при получении урона</span>
+        self.vekt = <span class="hljs-number">0</span>  <span class="hljs-comment"># определяет направление, куда бежит марио</span>
+        self.gr = []  <span class="hljs-comment"># инициализация для группы спрайтов</span>
+        self.zn = <span class="hljs-literal">False</span>  <span class="hljs-comment"># логическая пременная</span>
+        self.last_res = <span class="hljs-literal">True</span>  <span class="hljs-comment"># последний результат bool</span>
+        self.potential = <span class="hljs-number">0</span>  <span class="hljs-comment"># потенциал прыжка в пикселеях</span>
+        self.potential_life = <span class="hljs-number">0</span>  <span class="hljs-comment"># потенциал жизней</span>
+        self.lifes = <span class="hljs-number">0</span>  <span class="hljs-comment"># жизни марио</span>
+        self.dash = <span class="hljs-number">0</span>  <span class="hljs-comment"># сдвиг по камере, если X &lt; 0</span>
+        self.mn = [<span class="hljs-number">400</span>, <span class="hljs-number">580</span>]  <span class="hljs-comment"># возможные высоты платформ</span>
+        self.damage = [<span class="hljs-number">-15</span>, <span class="hljs-number">-20</span>, <span class="hljs-number">-20</span>, <span class="hljs-number">-20</span>, <span class="hljs-number">-20</span>, <span class="hljs-number">-15</span>, <span class="hljs-number">-15</span>, <span class="hljs-number">-10</span>, <span class="hljs-number">-10</span>, <span class="hljs-number">-10</span>, <span class="hljs-number">15</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">15</span>, <span class="hljs-number">15</span>, <span class="hljs-number">10</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>]
+        <span class="hljs-comment"># траектория Марио при потери жизни по y</span>
+        self.damage_x = [<span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">-5</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>]  <span class="hljs-comment"># траектория Марио</span>
+        <span class="hljs-comment"># при потери жизни по x</span>
+        self.last_sprite = <span class="hljs-number">0</span>
+        <span class="hljs-comment"># инциализация под последнего спрайта</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_walls</span>(<span class="hljs-params">self, gr</span>):</span>
+        <span class="hljs-comment"># задается группа платформ для марио</span>
+        self.gr = gr
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_group</span>(<span class="hljs-params">self, gr</span>):</span>
+        <span class="hljs-comment"># добавляется элемент в группу ( при доп инициализации)</span>
+        gr.add(self)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_lifes</span>(<span class="hljs-params">self, live</span>):</span>
+        <span class="hljs-comment"># инциализация жизней</span>
+        self.lifes = live
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># обновление спрайта в зависимости от совершенных действий</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.shoting <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> self.killed:
+            <span class="hljs-comment"># отрисовка по x</span>
+            <span class="hljs-keyword">if</span> self.moving:
+                self.move_x(self.vekt)
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.jumping:
+                    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                        self.image = Mario.image_stay_l
+                    <span class="hljs-keyword">else</span>:
+                        self.image = Mario.image_stay_r
+            <span class="hljs-comment"># отрисовка прыжка ниже</span>
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> pygame.sprite.spritecollideany(self, self.gr) <span class="hljs-keyword">and</span> self.potential == <span class="hljs-number">0</span>:
+                self.jumping = <span class="hljs-literal">True</span>
+                self.y += <span class="hljs-number">15</span>
+                self.last_res = <span class="hljs-literal">True</span>
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                    self.image = Mario.image_jump_l
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_jump_r
+            <span class="hljs-keyword">elif</span> self.potential != <span class="hljs-number">0</span>:
+                <span class="hljs-keyword">if</span> self.y &gt;= <span class="hljs-number">0</span>:
+                    self.y -= <span class="hljs-number">15</span>
+                    self.jumping = <span class="hljs-literal">True</span>
+                    self.potential -= <span class="hljs-number">15</span>
+                <span class="hljs-keyword">else</span>:
+                    self.potential = <span class="hljs-number">0</span>
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                    self.image = Mario.image_jump_l
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_jump_r
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-keyword">if</span> self.y + <span class="hljs-number">56</span> &lt;= self.mn[<span class="hljs-number">0</span>] <span class="hljs-keyword">or</span> (self.y &gt;= self.mn[<span class="hljs-number">0</span>] + <span class="hljs-number">20</span> <span class="hljs-keyword">and</span> self.y + <span class="hljs-number">56</span> &lt;= self.mn[<span class="hljs-number">1</span>]):
+                    self.jumping = <span class="hljs-literal">False</span>
+                    <span class="hljs-keyword">if</span> self.last_res:
+                        self.y -= <span class="hljs-number">5</span>
+                        self.last_res = <span class="hljs-literal">False</span>
+                <span class="hljs-keyword">else</span>:
+                    self.jumping = <span class="hljs-literal">True</span>
+                    self.y += <span class="hljs-number">15</span>
+                    self.last_res = <span class="hljs-literal">True</span>
+                    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                        self.image = Mario.image_jump_l
+                    <span class="hljs-keyword">else</span>:
+                        self.image = Mario.image_jump_r
+            self.rect = self.rect.move(self.x - self.rect.x, self.y - self.rect.y)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move_x</span>(<span class="hljs-params">self, x</span>):</span>  <span class="hljs-comment"># ход Марио по x</span>
+        <span class="hljs-string">'''
+        ход Марио по x
+        '''</span>
+        
+        self.xod += <span class="hljs-number">1</span>
+        self.vekt = x
+        <span class="hljs-keyword">if</span> x == <span class="hljs-number">1</span>:
+            <span class="hljs-keyword">if</span> self.vekt != <span class="hljs-number">0</span>:
+                <span class="hljs-keyword">if</span> self.x &lt;= <span class="hljs-number">350</span>:
+                    self.x += <span class="hljs-number">8</span>
+                    self.dash = <span class="hljs-number">8</span>
+                <span class="hljs-keyword">else</span>:
+                    self.x += <span class="hljs-number">0</span>
+            <span class="hljs-keyword">if</span> self.xod % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+                self.image = Mario.image_run1_r
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_run2_r
+        <span class="hljs-keyword">elif</span> x == <span class="hljs-number">-1</span>:
+            <span class="hljs-keyword">if</span> self.x - <span class="hljs-number">8</span> &gt;= <span class="hljs-number">0</span>:
+                self.x -= <span class="hljs-number">8</span>
+                self.dash = <span class="hljs-number">-8</span>
+            <span class="hljs-keyword">if</span> self.xod % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+                self.image = Mario.image_run1_l
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_run2_l
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_moving</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение состояния перемещения марио</span>
+        <span class="hljs-string">'''
+        изменение состояния перемещения марио
+        '''</span>
+        
+        <span class="hljs-keyword">if</span> self.moving:
+            self.moving = <span class="hljs-literal">False</span>
+            <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                self.image = Mario.image_stay_l
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_stay_r
+        <span class="hljs-keyword">else</span>:
+            self.moving = <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start_jump</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># инициализация прыжка</span>
+        <span class="hljs-string">'''
+         инициализация прыжка
+        '''</span>
+        
+        <span class="hljs-keyword">if</span> pygame.sprite.spritecollideany(self, self.gr):
+            <span class="hljs-keyword">if</span> self.potential == <span class="hljs-number">0</span>:
+                self.potential = <span class="hljs-number">225</span>
+            <span class="hljs-keyword">else</span>:
+                self.potential = <span class="hljs-number">120</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_coords</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># возвращение нижнего левого угла Марио</span>
+        <span class="hljs-string">'''
+        возвращение нижнего левого угла Марио
+        '''</span>
+        
+        <span class="hljs-keyword">return</span> [self.rect.x, self.rect.y + self.rect.w]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">damage_mario</span>(<span class="hljs-params">
+            self</span>):</span>  <span class="hljs-comment"># функция нужна для того, чтобы обработать соприкосновение Марио и моба не по верху; отрисовка анимации</span>
+
+        self.xod_shot += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">if</span> self.xod_shot &gt;= <span class="hljs-number">20</span> <span class="hljs-keyword">and</span> self.lifes != <span class="hljs-number">0</span>:
+            self.shoting = <span class="hljs-literal">False</span>
+            self.xod_shot = <span class="hljs-number">0</span>
+            <span class="hljs-keyword">if</span> self.y &gt;= <span class="hljs-number">500</span>:
+                self.y = <span class="hljs-number">500</span>
+            self.lifes -= <span class="hljs-number">1</span>
+            <span class="hljs-keyword">if</span> self.lifes &lt;= <span class="hljs-number">0</span>:
+                self.killed = <span class="hljs-literal">True</span>
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                    self.image = Mario.image_dethr
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_dethl
+        <span class="hljs-keyword">else</span>:
+            self.shoting = <span class="hljs-literal">True</span>
+            <span class="hljs-keyword">if</span> self.lifes &lt;= <span class="hljs-number">0</span>:
+                self.killed = <span class="hljs-literal">True</span>
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                    self.image = Mario.image_dethr
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_dethl
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-keyword">if</span> self.xod_shot % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+                    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                        self.image = Mario.image_damger
+                    <span class="hljs-keyword">else</span>:
+                        self.image = Mario.image_damgel
+                <span class="hljs-keyword">else</span>:
+                    <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                        self.image = Mario.image_damger1
+                    <span class="hljs-keyword">else</span>:
+                        self.image = Mario.image_damgel1
+            self.rect.y -= -self.damage[self.xod_shot]
+            <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                self.rect.x -= self.damage_x[self.xod_shot]
+            <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">1</span>:
+                self.rect.x -= -self.damage_x[self.xod_shot]
+            self.x = self.rect.x
+            self.y = self.rect.y
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_lifes</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-string">'''
+        обновляет жизни в Main.py
+        '''</span>
+        
+        <span class="hljs-comment"># обновляет жизни в Main.py</span>
+        <span class="hljs-keyword">return</span> self.lifes
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_dash</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-string">'''
+        возвращает перемщение по камере
+        '''</span>
+        
+        <span class="hljs-comment"># возвращает перемщение по камере</span>
+        <span class="hljs-keyword">if</span> self.moving:
+            <span class="hljs-keyword">return</span> self.dash
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check_fall</span>(<span class="hljs-params">self, mob</span>):</span>
+        <span class="hljs-string">'''
+        проверка соприкомновения
+        '''</span>
+        
+        <span class="hljs-comment"># проверка соприкомновения</span>
+        <span class="hljs-keyword">if</span> pygame.sprite.collide_mask(self, mob):
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">return_shot</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-string">'''
+        возвращает shooting
+        '''</span>
+        
+        <span class="hljs-comment"># возвращает shooting</span>
+        <span class="hljs-keyword">return</span> self.shoting
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">if_kill</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-string">'''
+        логика при смерти
+        '''</span>
+        
+        <span class="hljs-comment"># логика при смерти</span>
+        self.damage = <span class="hljs-number">0</span></code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="pygame.sprite.Sprite" href="http://localhost:8080/pygame.sprite.Sprite.ext">pygame.sprite.Sprite</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Mark.Mario.image_damgel"><code class="name">var <span class="ident">image_damgel</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_damgel1"><code class="name">var <span class="ident">image_damgel1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_damger"><code class="name">var <span class="ident">image_damger</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_damger1"><code class="name">var <span class="ident">image_damger1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_dethl"><code class="name">var <span class="ident">image_dethl</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_dethr"><code class="name">var <span class="ident">image_dethr</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_jump_l"><code class="name">var <span class="ident">image_jump_l</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_jump_r"><code class="name">var <span class="ident">image_jump_r</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_run1_l"><code class="name">var <span class="ident">image_run1_l</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_run1_r"><code class="name">var <span class="ident">image_run1_r</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_run2_l"><code class="name">var <span class="ident">image_run2_l</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_run2_r"><code class="name">var <span class="ident">image_run2_r</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_start"><code class="name">var <span class="ident">image_start</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_stay_l"><code class="name">var <span class="ident">image_stay_l</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Mark.Mario.image_stay_r"><code class="name">var <span class="ident">image_stay_r</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Mark.Mario.check_fall"><code class="name flex">
+<span>def <span class="ident">check_fall</span></span>(<span>self, mob)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>проверка соприкомновения</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check_fall</span>(<span class="hljs-params">self, mob</span>):</span>
+    <span class="hljs-string">'''
+    проверка соприкомновения
+    '''</span>
+    
+    <span class="hljs-comment"># проверка соприкомновения</span>
+    <span class="hljs-keyword">if</span> pygame.sprite.collide_mask(self, mob):
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span></code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.damage_mario"><code class="name flex">
+<span>def <span class="ident">damage_mario</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">damage_mario</span>(<span class="hljs-params">
+        self</span>):</span>  <span class="hljs-comment"># функция нужна для того, чтобы обработать соприкосновение Марио и моба не по верху; отрисовка анимации</span>
+
+    self.xod_shot += <span class="hljs-number">1</span>
+    <span class="hljs-keyword">if</span> self.xod_shot &gt;= <span class="hljs-number">20</span> <span class="hljs-keyword">and</span> self.lifes != <span class="hljs-number">0</span>:
+        self.shoting = <span class="hljs-literal">False</span>
+        self.xod_shot = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">if</span> self.y &gt;= <span class="hljs-number">500</span>:
+            self.y = <span class="hljs-number">500</span>
+        self.lifes -= <span class="hljs-number">1</span>
+        <span class="hljs-keyword">if</span> self.lifes &lt;= <span class="hljs-number">0</span>:
+            self.killed = <span class="hljs-literal">True</span>
+            <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                self.image = Mario.image_dethr
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_dethl
+    <span class="hljs-keyword">else</span>:
+        self.shoting = <span class="hljs-literal">True</span>
+        <span class="hljs-keyword">if</span> self.lifes &lt;= <span class="hljs-number">0</span>:
+            self.killed = <span class="hljs-literal">True</span>
+            <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                self.image = Mario.image_dethr
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_dethl
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">if</span> self.xod_shot % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                    self.image = Mario.image_damger
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_damgel
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">1</span>:
+                    self.image = Mario.image_damger1
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_damgel1
+        self.rect.y -= -self.damage[self.xod_shot]
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+            self.rect.x -= self.damage_x[self.xod_shot]
+        <span class="hljs-keyword">elif</span> self.vekt == <span class="hljs-number">1</span>:
+            self.rect.x -= -self.damage_x[self.xod_shot]
+        self.x = self.rect.x
+        self.y = self.rect.y</code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.get_coords"><code class="name flex">
+<span>def <span class="ident">get_coords</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>возвращение нижнего левого угла Марио</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_coords</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># возвращение нижнего левого угла Марио</span>
+    <span class="hljs-string">'''
+    возвращение нижнего левого угла Марио
+    '''</span>
+    
+    <span class="hljs-keyword">return</span> [self.rect.x, self.rect.y + self.rect.w]</code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.get_dash"><code class="name flex">
+<span>def <span class="ident">get_dash</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>возвращает перемщение по камере</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_dash</span>(<span class="hljs-params">self</span>):</span>
+    <span class="hljs-string">'''
+    возвращает перемщение по камере
+    '''</span>
+    
+    <span class="hljs-comment"># возвращает перемщение по камере</span>
+    <span class="hljs-keyword">if</span> self.moving:
+        <span class="hljs-keyword">return</span> self.dash
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span></code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.if_kill"><code class="name flex">
+<span>def <span class="ident">if_kill</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>логика при смерти</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">if_kill</span>(<span class="hljs-params">self</span>):</span>
+    <span class="hljs-string">'''
+    логика при смерти
+    '''</span>
+    
+    <span class="hljs-comment"># логика при смерти</span>
+    self.damage = <span class="hljs-number">0</span></code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.move_x"><code class="name flex">
+<span>def <span class="ident">move_x</span></span>(<span>self, x)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>ход Марио по x</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move_x</span>(<span class="hljs-params">self, x</span>):</span>  <span class="hljs-comment"># ход Марио по x</span>
+    <span class="hljs-string">'''
+    ход Марио по x
+    '''</span>
+    
+    self.xod += <span class="hljs-number">1</span>
+    self.vekt = x
+    <span class="hljs-keyword">if</span> x == <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">if</span> self.vekt != <span class="hljs-number">0</span>:
+            <span class="hljs-keyword">if</span> self.x &lt;= <span class="hljs-number">350</span>:
+                self.x += <span class="hljs-number">8</span>
+                self.dash = <span class="hljs-number">8</span>
+            <span class="hljs-keyword">else</span>:
+                self.x += <span class="hljs-number">0</span>
+        <span class="hljs-keyword">if</span> self.xod % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+            self.image = Mario.image_run1_r
+        <span class="hljs-keyword">else</span>:
+            self.image = Mario.image_run2_r
+    <span class="hljs-keyword">elif</span> x == <span class="hljs-number">-1</span>:
+        <span class="hljs-keyword">if</span> self.x - <span class="hljs-number">8</span> &gt;= <span class="hljs-number">0</span>:
+            self.x -= <span class="hljs-number">8</span>
+            self.dash = <span class="hljs-number">-8</span>
+        <span class="hljs-keyword">if</span> self.xod % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+            self.image = Mario.image_run1_l
+        <span class="hljs-keyword">else</span>:
+            self.image = Mario.image_run2_l</code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.return_shot"><code class="name flex">
+<span>def <span class="ident">return_shot</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>возвращает shooting</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">return_shot</span>(<span class="hljs-params">self</span>):</span>
+    <span class="hljs-string">'''
+    возвращает shooting
+    '''</span>
+    
+    <span class="hljs-comment"># возвращает shooting</span>
+    <span class="hljs-keyword">return</span> self.shoting</code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.set_group"><code class="name flex">
+<span>def <span class="ident">set_group</span></span>(<span>self, gr)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_group</span>(<span class="hljs-params">self, gr</span>):</span>
+    <span class="hljs-comment"># добавляется элемент в группу ( при доп инициализации)</span>
+    gr.add(self)</code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.set_lifes"><code class="name flex">
+<span>def <span class="ident">set_lifes</span></span>(<span>self, live)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_lifes</span>(<span class="hljs-params">self, live</span>):</span>
+    <span class="hljs-comment"># инциализация жизней</span>
+    self.lifes = live</code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.set_moving"><code class="name flex">
+<span>def <span class="ident">set_moving</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>изменение состояния перемещения марио</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_moving</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># изменение состояния перемещения марио</span>
+    <span class="hljs-string">'''
+    изменение состояния перемещения марио
+    '''</span>
+    
+    <span class="hljs-keyword">if</span> self.moving:
+        self.moving = <span class="hljs-literal">False</span>
+        <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+            self.image = Mario.image_stay_l
+        <span class="hljs-keyword">else</span>:
+            self.image = Mario.image_stay_r
+    <span class="hljs-keyword">else</span>:
+        self.moving = <span class="hljs-literal">True</span></code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.set_walls"><code class="name flex">
+<span>def <span class="ident">set_walls</span></span>(<span>self, gr)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_walls</span>(<span class="hljs-params">self, gr</span>):</span>
+    <span class="hljs-comment"># задается группа платформ для марио</span>
+    self.gr = gr</code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.start_jump"><code class="name flex">
+<span>def <span class="ident">start_jump</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>инициализация прыжка</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start_jump</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># инициализация прыжка</span>
+    <span class="hljs-string">'''
+     инициализация прыжка
+    '''</span>
+    
+    <span class="hljs-keyword">if</span> pygame.sprite.spritecollideany(self, self.gr):
+        <span class="hljs-keyword">if</span> self.potential == <span class="hljs-number">0</span>:
+            self.potential = <span class="hljs-number">225</span>
+        <span class="hljs-keyword">else</span>:
+            self.potential = <span class="hljs-number">120</span></code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.update"><code class="name flex">
+<span>def <span class="ident">update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>method to control sprite behavior</p>
+<p>Sprite.update(<em>args, </em>*kwargs):</p>
+<p>The default implementation of this method does nothing; it's just a
+convenient "hook" that you can override. This method is called by
+Group.update() with whatever arguments you give it.</p>
+<p>There is no need to use this method if not using the convenience
+method by the same name in the Group class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span>(<span class="hljs-params">self</span>):</span>  <span class="hljs-comment"># обновление спрайта в зависимости от совершенных действий</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.shoting <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> self.killed:
+        <span class="hljs-comment"># отрисовка по x</span>
+        <span class="hljs-keyword">if</span> self.moving:
+            self.move_x(self.vekt)
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.jumping:
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                    self.image = Mario.image_stay_l
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_stay_r
+        <span class="hljs-comment"># отрисовка прыжка ниже</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> pygame.sprite.spritecollideany(self, self.gr) <span class="hljs-keyword">and</span> self.potential == <span class="hljs-number">0</span>:
+            self.jumping = <span class="hljs-literal">True</span>
+            self.y += <span class="hljs-number">15</span>
+            self.last_res = <span class="hljs-literal">True</span>
+            <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                self.image = Mario.image_jump_l
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_jump_r
+        <span class="hljs-keyword">elif</span> self.potential != <span class="hljs-number">0</span>:
+            <span class="hljs-keyword">if</span> self.y &gt;= <span class="hljs-number">0</span>:
+                self.y -= <span class="hljs-number">15</span>
+                self.jumping = <span class="hljs-literal">True</span>
+                self.potential -= <span class="hljs-number">15</span>
+            <span class="hljs-keyword">else</span>:
+                self.potential = <span class="hljs-number">0</span>
+            <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                self.image = Mario.image_jump_l
+            <span class="hljs-keyword">else</span>:
+                self.image = Mario.image_jump_r
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">if</span> self.y + <span class="hljs-number">56</span> &lt;= self.mn[<span class="hljs-number">0</span>] <span class="hljs-keyword">or</span> (self.y &gt;= self.mn[<span class="hljs-number">0</span>] + <span class="hljs-number">20</span> <span class="hljs-keyword">and</span> self.y + <span class="hljs-number">56</span> &lt;= self.mn[<span class="hljs-number">1</span>]):
+                self.jumping = <span class="hljs-literal">False</span>
+                <span class="hljs-keyword">if</span> self.last_res:
+                    self.y -= <span class="hljs-number">5</span>
+                    self.last_res = <span class="hljs-literal">False</span>
+            <span class="hljs-keyword">else</span>:
+                self.jumping = <span class="hljs-literal">True</span>
+                self.y += <span class="hljs-number">15</span>
+                self.last_res = <span class="hljs-literal">True</span>
+                <span class="hljs-keyword">if</span> self.vekt == <span class="hljs-number">-1</span>:
+                    self.image = Mario.image_jump_l
+                <span class="hljs-keyword">else</span>:
+                    self.image = Mario.image_jump_r
+        self.rect = self.rect.move(self.x - self.rect.x, self.y - self.rect.y)</code></pre>
+</details>
+</dd>
+<dt id="Mark.Mario.update_lifes"><code class="name flex">
+<span>def <span class="ident">update_lifes</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>обновляет жизни в Main.py</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_lifes</span>(<span class="hljs-params">self</span>):</span>
+    <span class="hljs-string">'''
+    обновляет жизни в Main.py
+    '''</span>
+    
+    <span class="hljs-comment"># обновляет жизни в Main.py</span>
+    <span class="hljs-keyword">return</span> self.lifes</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="Mark.load_image" href="http://localhost:8080/Mark.html#Mark.load_image">load_image</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="Mark.Mario" href="http://localhost:8080/Mark.html#Mark.Mario">Mario</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Mark.Mario.check_fall" href="http://localhost:8080/Mark.html#Mark.Mario.check_fall">check_fall</a></code></li>
+<li><code><a title="Mark.Mario.damage_mario" href="http://localhost:8080/Mark.html#Mark.Mario.damage_mario">damage_mario</a></code></li>
+<li><code><a title="Mark.Mario.get_coords" href="http://localhost:8080/Mark.html#Mark.Mario.get_coords">get_coords</a></code></li>
+<li><code><a title="Mark.Mario.get_dash" href="http://localhost:8080/Mark.html#Mark.Mario.get_dash">get_dash</a></code></li>
+<li><code><a title="Mark.Mario.if_kill" href="http://localhost:8080/Mark.html#Mark.Mario.if_kill">if_kill</a></code></li>
+<li><code><a title="Mark.Mario.image_damgel" href="http://localhost:8080/Mark.html#Mark.Mario.image_damgel">image_damgel</a></code></li>
+<li><code><a title="Mark.Mario.image_damgel1" href="http://localhost:8080/Mark.html#Mark.Mario.image_damgel1">image_damgel1</a></code></li>
+<li><code><a title="Mark.Mario.image_damger" href="http://localhost:8080/Mark.html#Mark.Mario.image_damger">image_damger</a></code></li>
+<li><code><a title="Mark.Mario.image_damger1" href="http://localhost:8080/Mark.html#Mark.Mario.image_damger1">image_damger1</a></code></li>
+<li><code><a title="Mark.Mario.image_dethl" href="http://localhost:8080/Mark.html#Mark.Mario.image_dethl">image_dethl</a></code></li>
+<li><code><a title="Mark.Mario.image_dethr" href="http://localhost:8080/Mark.html#Mark.Mario.image_dethr">image_dethr</a></code></li>
+<li><code><a title="Mark.Mario.image_jump_l" href="http://localhost:8080/Mark.html#Mark.Mario.image_jump_l">image_jump_l</a></code></li>
+<li><code><a title="Mark.Mario.image_jump_r" href="http://localhost:8080/Mark.html#Mark.Mario.image_jump_r">image_jump_r</a></code></li>
+<li><code><a title="Mark.Mario.image_run1_l" href="http://localhost:8080/Mark.html#Mark.Mario.image_run1_l">image_run1_l</a></code></li>
+<li><code><a title="Mark.Mario.image_run1_r" href="http://localhost:8080/Mark.html#Mark.Mario.image_run1_r">image_run1_r</a></code></li>
+<li><code><a title="Mark.Mario.image_run2_l" href="http://localhost:8080/Mark.html#Mark.Mario.image_run2_l">image_run2_l</a></code></li>
+<li><code><a title="Mark.Mario.image_run2_r" href="http://localhost:8080/Mark.html#Mark.Mario.image_run2_r">image_run2_r</a></code></li>
+<li><code><a title="Mark.Mario.image_start" href="http://localhost:8080/Mark.html#Mark.Mario.image_start">image_start</a></code></li>
+<li><code><a title="Mark.Mario.image_stay_l" href="http://localhost:8080/Mark.html#Mark.Mario.image_stay_l">image_stay_l</a></code></li>
+<li><code><a title="Mark.Mario.image_stay_r" href="http://localhost:8080/Mark.html#Mark.Mario.image_stay_r">image_stay_r</a></code></li>
+<li><code><a title="Mark.Mario.move_x" href="http://localhost:8080/Mark.html#Mark.Mario.move_x">move_x</a></code></li>
+<li><code><a title="Mark.Mario.return_shot" href="http://localhost:8080/Mark.html#Mark.Mario.return_shot">return_shot</a></code></li>
+<li><code><a title="Mark.Mario.set_group" href="http://localhost:8080/Mark.html#Mark.Mario.set_group">set_group</a></code></li>
+<li><code><a title="Mark.Mario.set_lifes" href="http://localhost:8080/Mark.html#Mark.Mario.set_lifes">set_lifes</a></code></li>
+<li><code><a title="Mark.Mario.set_moving" href="http://localhost:8080/Mark.html#Mark.Mario.set_moving">set_moving</a></code></li>
+<li><code><a title="Mark.Mario.set_walls" href="http://localhost:8080/Mark.html#Mark.Mario.set_walls">set_walls</a></code></li>
+<li><code><a title="Mark.Mario.start_jump" href="http://localhost:8080/Mark.html#Mark.Mario.start_jump">start_jump</a></code></li>
+<li><code><a title="Mark.Mario.update" href="http://localhost:8080/Mark.html#Mark.Mario.update">update</a></code></li>
+<li><code><a title="Mark.Mario.update_lifes" href="http://localhost:8080/Mark.html#Mark.Mario.update_lifes">update_lifes</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+<script>
+setInterval(() =>
+fetch(window.location.href, {
+method: "HEAD",
+cache: "no-store",
+headers: {"If-None-Match": "1651489744.0"},
+}).then(response => response.ok && window.location.reload()), 700);
+</script>
+
+</body></html>

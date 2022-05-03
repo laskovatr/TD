@@ -607,3 +607,4 @@ while running:  # основной код, где происходит все, �
                     screen.blit(string_rendered, intro_rect)
                 clock.tick(30)
                 pygame.display.flip()
+
