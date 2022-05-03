@@ -17,4 +17,4 @@ jobs:
           python-version: '3.8'
           architecture: 'x64'
       - name: Run tests
-        run: run test/tests.py
+        run: python3 test/tests.py
