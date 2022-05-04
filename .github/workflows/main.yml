@@ -17,4 +17,8 @@ jobs:
           python-version: '3.8'
           architecture: 'x64'
       - name: Run tests
-        run: find tests.py
+        run: |
+              cd ..
+              pwd
+              cd ..
+              pwd
