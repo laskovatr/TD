@@ -18,19 +18,4 @@ jobs:
           python-version: '3.8'
           architecture: 'x64'
       - name: Run tests
-        run: |
-              cd ..
-              pwd
-              ls -a
-              cd ..
-              pwd
-              ls -a
-              cd ..
-              pwd
-              ls -a
-              cd ..
-              pwd
-              ls -a
-              cd ..
-              pwd
-              ls -a
+        run: python3 tests.py
